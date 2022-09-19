@@ -1,5 +1,5 @@
 - name: installing packeges
-  hosts: tower2
+  hosts: all
   tasks:
     - name: installing httpd
       yum:
