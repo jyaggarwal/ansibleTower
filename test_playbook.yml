@@ -1,6 +1,6 @@
 ---
   - name: apache2 is there
-  - hosts: localhost
+  - hosts: all
     tasks:
       - name: ensure apache2 is installed
         apt: name=apache2 state=latest
