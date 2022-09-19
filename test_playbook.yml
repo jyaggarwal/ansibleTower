@@ -3,4 +3,4 @@
     hosts: localhost
     tasks:
       - name: ensure httpd is started
-        yum: name=httpd state=started
+        yum: name=httpd state=present
