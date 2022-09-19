@@ -1,6 +1,11 @@
----
-  - name: httpd is there
-    hosts: localhost
-    tasks:
-      - name: ensure httpd is started
-        yum: name=httpd state=started
+- name: installing packeges
+  hosts: all
+  tasks:
+    - name: installing httpd
+      yum:
+        name: httpd
+        state: present
+    - name: starting httpd service
+      service:
+        name: httpd
+        state: started
