@@ -3,4 +3,4 @@
     hosts: all
     tasks:
       - name: ensure apache2 is installed
-        yum name=apache2 state=present
+        yum: name=apache2 state=present
