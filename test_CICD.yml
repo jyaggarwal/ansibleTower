@@ -1,6 +1,6 @@
 ---
-  - name: apache2 is there
+  - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure apache2 is installed
+      - name: ensure httpd is installed
         yum: name=httpd state=started
