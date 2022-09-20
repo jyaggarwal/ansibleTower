@@ -2,5 +2,5 @@
   - name: apache2 is there
     hosts: all
     tasks:
-      - name: ensure apache2 is installed
+      - name: ensure aapache2 is installed
         yum: name=apache2 state=present
