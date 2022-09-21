@@ -1,5 +1,5 @@
 ---
-  - name: apache2 is there
+  - name: apache22 is there
     hosts: all
     tasks:
       - name: ensure apache2 is installed
