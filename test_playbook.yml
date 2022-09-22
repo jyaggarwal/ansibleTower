@@ -1,6 +1,6 @@
-- name: Configure the service
-  ansible.builtin.template:
-    src: templates/src.j2
-    dest: /etc/foo.conf
+tasks:
+- name: Print a message
+  ansible.builtin.debug:
+    msg: "Always runs"
   tags:
-  - configuration
+  - always
