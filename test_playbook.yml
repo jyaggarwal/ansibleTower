@@ -1,9 +1,6 @@
----
-  - name: apache2 is there
-    hosts: all
-    tasks:
-      - name: ensure apache2 is installed
-        yum: name=apache2 state=started
-        tags:
-        - test
-        
+- name: Configure the service
+  ansible.builtin.template:
+    src: templates/src.j2
+    dest: /etc/foo.conf
+  tags:
+  - configuration
