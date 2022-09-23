@@ -1,12 +1,12 @@
-- hosts: all
-  tasks:
-- name: Print a message
-  ansible.builtin.debug:
-    msg: "Always runs"
-  tags:
-  - always
-  vars_prompt:
-    - name: branch
-      prompt: 'Enter a branch to deploy'
-      default: test_branch
-      private: no
+---
+  - name: httpd is there
+    hosts: all
+    hosts: localhost
+    tasks:
+      - name: ensure httpd is started
+        yum: name=httpd state=started
+    vars_prompt:
+      - name: branch
+        prompt: 'Enter a branch to deploy'
+        default: test_branch
+        private: no
