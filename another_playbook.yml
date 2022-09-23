@@ -1,0 +1,8 @@
+- name: Testing variables is there
+  hosts: all
+  tasks:
+    - action: 'uri url=https://www.example.com return_content=yes'
+      register: webpage
+    - fail:
+        msg: username_on_the_host
+      when: '''AWESOME'' not in webpage.content'
