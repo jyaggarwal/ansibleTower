@@ -1,4 +1,4 @@
-- name: httpd is there
+- name: Testing variables is there
   hosts: all
   tasks:
     - action: 'uri url=https://www.example.com return_content=yes'
