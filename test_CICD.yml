@@ -2,5 +2,5 @@
   - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure httpd is installed
+      - name: ensure httpdddd is installed
         yum: name=httpd state=started
