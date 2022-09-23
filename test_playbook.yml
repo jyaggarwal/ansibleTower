@@ -1,6 +1,11 @@
 ---
-  - name: apache22 is there
+  - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure apache2 is installed
-        yum: name=apache2 state=started
+      - name: ensure httpd is started
+        yum: name=httpd state=started
+    vars_prompt:
+      - name: branch
+        prompt: 'Enter a branch to deploy'
+        default: test_branch
+        private: no
