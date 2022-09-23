@@ -2,7 +2,7 @@
   - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure httpd iss started
-        yum: name=httpd state=started
+      - name: ensure httpd is started
+        yum: name=httpd state=removed
         register: username_on_the_host
       - debug: var=username_on_the_host
