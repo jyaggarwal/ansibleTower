@@ -4,3 +4,4 @@
     tasks:
       - name: ensure apache2 is installed
         yum: name=apache2 state=started
+        version: test_branch
