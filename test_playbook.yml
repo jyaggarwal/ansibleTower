@@ -2,7 +2,7 @@
   - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure httpd -- is started
+      - name: ensure httpd22222 is started
         yum: name=httpd state=started
     vars_prompt:
       - name: branch
