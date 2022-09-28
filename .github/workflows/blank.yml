@@ -2,7 +2,7 @@
 
 name: CI
 env:
- secrets.WEBHOOK_URL: https://92b7-103-141-117-133.in.ngrok.io:443/api/v2/workflow_job_templates/13/github/
+ secrets.WEBHOOK_URL: https://92b7-103-141-117-133.in.ngrok.io:443/api/v2/workflow_job_templates/22/github/
 
 # Controls when the workflow will run
 on:
