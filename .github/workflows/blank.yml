@@ -25,6 +25,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
        - name: Check out repository code
+         uses: jyaggarwal/ansibleTower@master
          with:
           url: ${{ secrets.WEBHOOK_URL }}
           body: '{"event": "pull_request", "action": "opened"}'
