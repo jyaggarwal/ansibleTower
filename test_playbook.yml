@@ -2,5 +2,5 @@
   - name: httpd is there
     hosts: all
     tasks:
-      - name: ensure httpd is install
+      - name: ensure httpd is install123
         yum: name=httpd state=present
